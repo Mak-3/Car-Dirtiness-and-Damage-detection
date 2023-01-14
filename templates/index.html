@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Dr.Car</title>
+  </head>
+  <body>
+    <div>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars" id="bars"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <img src="/static/logo.png" width="80">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#test">Demo</a></li>
+      </ul>
+    </nav>
+  </div>
+    <section id="home" class="home" style="background: url('/static/bg.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+     <div class="tagline"><h1>Car Dirtiness and Damage Detection with Specification</h1>
+      <a href=bookappt><button>Book a Service</button></a></div>
+    </section>
+    <section class="page2" id="services">
+      <div class="heading">
+        <h1><b>Services</b></h1>
+        <hr>
+      </div>
+      <div class="rectdes">
+        <div class="content">
+        <h4>Dr car can fix your car at your comfort place within hours utiizing the time in most efficient way. Our pre trained models help us to analyze the time required to fix your car accurately. We provide live tracking facility using which you can get realtime updates.</h4>
+        <h2>Services Offered</h2>
+        <div class="services">
+          <div class="service">
+          <img src="/static/car-wash.png" alt="" style="width: 50px;">
+          <h4>Washing</h4>
+          </div>
+          <div class="service">
+            <img src="/static/car-repair.png" alt="" style="width: 50px;">
+            <h4>Repairing</h4>
+          </div>
+          <div class="service">
+            <img src="/static/car-polish.png" alt="" style="width: 50px;">
+            <h4>Polishing</h4>
+          </div>
+          <div class="service">
+            <img src="/static/car-oil.png" alt="" style="width: 50px;">
+            <h4>Oiling</h4>
+          </div>
+        </div>
+        </div>
+        <div id="slider">
+          <ul id="slideWrap"> 
+            <li><img src="/static/carwash.jpg" alt=""></li>
+            <li><img src="/static/car_repair.jpeg" alt=""></li>
+            <li><img src="/static/car_oil_change.jpg" alt=""></li>
+            <li><img src="/static/car_polishing.jpg" alt=""></li>
+            <li><img src="/static/car_tyre_change.jpeg" alt=""></li>
+          </ul>
+          <a id="prev" href="#">&#8810;</a>
+          <a id="next" href="#">&#8811;</a>
+        </div>
+      </div>
+    </section>
+    <section class="test" id="test">
+      <div class="heading2">
+        <hr>
+        <h1><b>Demo</b></h1>
+      </div>
+    <div class="yolo">
+    <form class="form-signin" method=post enctype=multipart/form-data>
+        <h1 class="h3 mb-5 font-weight-normal">Upload any image</h1>
+        <input type="file" name="file" class="form-control-file" id="inputfile">
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+    </form>
+    </div>
+    <div>
+      
+      
+    </div>
+    </section>
+    <script src="/static/script.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('#inputfile').bind('change', function() {
+          let fileSize = this.files[0].size/1024/1024; // this gives in MB
+          if (fileSize > 1) {
+            $("#inputfile").val(null);
+            alert('file is too big. images more than 1MB are not allowed')
+            return
+          }
+          let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+          if($.inArray(ext, ['jpg','jpeg']) == -1) {
+            $("#inputfile").val(null);
+            alert('only jpeg/jpg files are allowed!');
+          }
+      });
+    </script>
+  </body>
+</html>

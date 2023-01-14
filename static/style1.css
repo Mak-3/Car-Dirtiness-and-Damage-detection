@@ -1,0 +1,44 @@
+body{
+  background: #fff !important;
+  font-family: 'Muli', sans-serif;
+  width: 100%;
+}
+h1{
+  color: #000;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2vw;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: crimson;
+  text-decoration: none;
+}
+.form-control:focus {
+    color: #000;
+    background-color: #fff;
+    border:2px solid crimson;
+    outline: 0;
+    box-shadow: none;
+}
+.btn{
+  background: crimson;
+  border: crimson;
+}
+.btn:hover {
+  background: crimson;
+  border: crimson;
+}
+.slider{
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider p {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Open Sans;
+  padding-left: 30px;
+  color: black;
+}
