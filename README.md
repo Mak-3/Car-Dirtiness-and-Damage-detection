@@ -24,8 +24,8 @@ open in localhost
 
 # output
 ![Screenshot (14)](https://user-images.githubusercontent.com/75625675/212541145-287ca291-f6ef-4f7b-8e09-f379cb03f828.png)
-![Screenshot (24)](https://user-images.githubusercontent.com/75625675/212541152-bbc39b55-5b8d-47fa-88c3-e5852806c2a8.png)
-![Screenshot (28)](https://user-images.githubusercontent.com/75625675/212541165-32d3aca4-882d-4c27-a18c-aef2c9c79ece.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/75625675/212541862-b306dca6-2b0d-4969-9967-e598c29597e8.png)
+![Screenshot (28)](https://user-images.githubusercontent.com/75625675/212541874-a0a5292f-84cb-4197-b640-bf7c9f60b242.png)
 
 # Types of output
 YOLOv5 will return image if damaged with bounding boxes namely of 4 possibilities 
